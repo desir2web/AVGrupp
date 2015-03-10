@@ -660,6 +660,10 @@ input[type="reset"]::-moz-focus-inner {
                     text-indent: 0em;
                     background-image: none;
                 }
+    .header span a[href*="tel:"], .header.fixed span a[href*="tel:"] {
+        color: #fff;
+        text-decoration: none;
+    }
 
 }
 
@@ -687,6 +691,13 @@ input[type="reset"]::-moz-focus-inner {
         }
         .content [class*=span] .news .all {
             padding: 10px 12px 12px 40px;
+        }
+    
+    .content [class*=span] .page {
+        margin: 0;
+    }
+        .content [class*=span] .page:hover {
+            margin: 0;
         }
     
 }

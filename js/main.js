@@ -26,14 +26,5 @@ $(document).ready(function(){
 			return false;
         }
     });
-    
-    $("body").on('click', function(){
-        if ($(".header").hasClass('open')) {
-            $('.header').removeClass('open');
-            return false;
-        } else {
-			return true;
-        }
-    });
 
 });
