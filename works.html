@@ -30,6 +30,8 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
         <script type="text/javascript" src="js/rotator.js"></script>
         
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+        
         <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         
         <script>
@@ -41,6 +43,12 @@
                     navigationText : ["",""],
                     pagination : false,
                     autoPlay : 4000
+                });
+                
+                $('.masonry').masonry({
+                    'itemSelector': '.item',
+                    "gutter": ".gutter-size",
+                    //columnWidth: 200
                 });
             });
         </script>
@@ -92,31 +100,44 @@
                         <div class="page">
                                       
                             <h2>
-                                Сервис
+                                Наши работы
                             </h2>
                             
                             <p>
-                                Текст с описанием предоставляемого сервиса, а чуть ниже карта России с отметками городов куда мы осуществляли поставки.
-                            </p>
-                            <p>
-                                Для повышения автоматизации и интерактивности, лучше поместить интерактивную карту, например, Яндекса.
-                            </p>
-                            
-                            <h3>
-                                Текст может быть большим
-                            </h3>
-                            
-                            <p>
-                                Здесь тоже можно разбивать текст на абзацы и смысловые блоки, если в этом есть необходимость. Втексте могут встречаться картинки или галереи, как и в других страницах. Главное, не забывать «разбавлять» текст заголовками и картинками.
-                            </p>
-                            
-                            <img src="img/map-service.jpg" alt="">
-                            
-                            <p>
-                                Ниже может распологаться еще текст или картинки, а так же галереи, если в этом есть необходимость, если нет, то блок закончится сразу за картой.
+                                Краткое описание для раздела в целом. Возможно, буквально на пару строк, а возможно больше — здесь тоже нет ограничений по объему текста, хотя, конечно, рекомендуется не использовать большие массивы текста.
                             </p>
                             
                         </div>
+
+                        <div class="masonry works clearfix">
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/solutions.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/fasad.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/banner.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/fasad.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/solutions.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="img"><img src="img/banner.jpg" alt=""></div>
+                                <h3>Название работы, в несколько строк, или одну</h3>
+                            </a>
+                            
+                            <div class="gutter-size"></div>
+                        </div>
+                        
                     </div>
                     
                 </div>
