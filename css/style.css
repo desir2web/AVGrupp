@@ -1,4 +1,4 @@
-/* Packed by Mikhail Nikipelov — https://twitter.com/desir2web/ */
+/* Mikhail Nikipelov — http://desir.me/ */
 
 @import url(bootstrap/bootstrap.css);
 @import url(bootstrap/bootstrap-responsive.css);
@@ -59,15 +59,44 @@ a:active {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+
+h2 {
+    font-size: 24px;
+    color: #e4073c;
+    padding: 15px 20px;
+}
+h3, h4, h5, h6 {
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ClearSansBold';
+    font-weight: 400;
     padding: 20px;
 }
-h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
-    padding: 0 20px 20px 20px;
+    h2, h3, h4, h5, h6 {
+        line-height: 24px;
+    }
+    h3, h4, h5, h6 {
+        padding: 20px 20px 0 20px;
+    }
+    h2+h3, h2+h4, h2+h5, h2+h6 {
+        padding: 0 20px;
+    }
+        h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+            padding: 10px 20px 0 20px;
+        }
+p {
+    padding: 20px;
 }
-p+p {
-    padding: 0 20px 20px 20px;
-}
+    p+p {
+        padding: 10px 20px;
+    }
+        p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
+            padding: 10px 20px 0 20px;
+        }
+
 
 *,
 *:before,
@@ -362,12 +391,17 @@ input[type="reset"]::-moz-focus-inner {
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-        .content [class*=span] .solutions .info .caption {
+        .content [class*=span] .solutions .info h2 {
             font-family: 'ClearSansThin';
+            color: #fff;
             font-size: 45px;
             letter-spacing: -4px;
             text-transform: uppercase;
+            padding: 25px 20px 15px 20px;
         }
+    .content [class*=span] .solutions .info p {
+        padding: 10px 20px 20px 20px
+    }
     .content [class*=span] .solutions:hover .info {
         background: rgba(116, 150, 0, 1);
     }
@@ -495,6 +529,34 @@ input[type="reset"]::-moz-focus-inner {
         background-size: 32px 13px;
     }
 
+
+
+/* inside pages */
+
+.content [class*=span] .page {
+    padding: 0 0 30px 0;
+    margin: 0 0 20px 0;
+}
+    .content [class*=span] .page:hover {
+        margin: 0 0 20px 0;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+.content [class*=span] .page img, .content [class*=span] .page iframe, .content [class*=span] .page .slider {
+    padding: 10px 0;
+}
+
+.content [class*=span] .page .gallery {
+    padding: 10px 0 0 20px;
+}
+    .content [class*=span] .page .gallery a {
+        display: block;
+        float: left;
+        margin: 0 20px 0 0;
+    }
+    .content [class*=span] .page .gallery+p {
+        padding: 10px 20px 0 20px;
+    }
 
 
 /* footer */

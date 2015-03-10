@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8" lang="en">		 <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9" lang="en">				 <![endif]-->
+<!--                   Mikhail Nikipelov — http://desir.me/                   -->
+<!--[if gt IE 8]><!--> <html lang="ru">							 <!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		
+		<title>AV Grupp</title>
+		
+		<link rel="stylesheet" href="css/style.css">
+        
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+<!--        <script src="js/jquery-1.8.3.min.js"></script>-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="js/css_browser_selector.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+        <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
+        <script src="plugins/owl-carousel/owl.carousel.js"></script>
+        
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+        <script type="text/javascript" src="js/rotator.js"></script>
+        
+        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        
+        <script>
+            $(document).ready(function() {
+                $(".works").owlCarousel({
+                    navigation : true, // Show next and prev buttons
+                    slideSpeed : 300,
+                    paginationSpeed : 400,
+                    singleItem : true,
+                    navigationText : ["",""],
+                    pagination : false
+                    // "singleItem:true" is a shortcut for:
+                    // items : 1, 
+                    // itemsDesktop : false,
+                    // itemsDesktopSmall : false,
+                    // itemsTablet: false,
+                    // itemsMobile : false
+                });
+                $(".banner").owlCarousel({
+                    navigation : true,
+                    slideSpeed : 300,
+                    singleItem : true,
+                    navigationText : ["",""],
+                    pagination : false,
+                    autoPlay : 4000
+                });
+            });
+        </script>
+		
+	</head>
+	
+	<body>
+		
+		<header class="header">
+
+            <div class="row-fluid">
+                <div class="container">
+                   
+                    <div class="span12">
+                        <div class="menu-toggle"><div class="menu-btn"></div></div>
+                        <menu>
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Решения</a></li>
+                                <li><a href="#">Наши работы</a></li>
+                                <li><a href="#">Сервис</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </menu>
+                        <span>+7 (495) 729 60 86</span>
+                    </div>
+                    
+				</div>
+			</div>
+			
+		</header>
+
+        <section class="content">
+            
+            <div class="row-fluid">
+                <div class="container">
+
+                    <div class="span3">
+
+                        <a href="index.html" class="logo">
+                            <h1 class="caption">AV Group</h1>
+                        </a>
+
+                    </div>
+                    
+                    <div class="span9">
+                        <div class="page">
+                                      
+                            <h2>
+                                О компании
+                            </h2>
+                            
+                            <img src="img/fasad.jpg">
+                            
+                            <h3>
+                                Над этим текстом стоит одиночная фотография или слайдер
+                            </h3>
+                            
+                            <p>
+                                Текст о компании. Возможно какие-то фотографи. Текста может быть не много, но нет при этом такого ограничения — можно написать довольно много текста и даже разбить его на смысловые блоки, используя подзаголовки.
+                            </p>
+                            <p>
+                                Так же удобно разделять текст на абзацы. Лучше всего — разделять и так и так, чтобы повысить легкость чтения текста.
+                            </p>
+                            
+                            <h3>
+                                А под этим стоит галерея
+                            </h3>
+                            
+                            <p>
+                                В них может содержаться несколько фотографий. По нажатию откывается полная версия фото.
+                            </p>
+                            
+                            <div class="gallery clearfix">
+                                <a href="#"><img src="img/thumbs/01.jpg" alt=""></a>
+                                <a href="#"><img src="img/thumbs/02.jpg" alt=""></a>
+                                <a href="#"><img src="img/thumbs/03.jpg" alt=""></a>
+                                <a href="#"><img src="img/thumbs/04.jpg" alt=""></a>
+                            </div>
+                            
+                            <p>
+                                После галереи может идти снова текст или картинки или заголовок — полностью на Ваше усмотрение.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                    
+        </section>
+        
+        <footer class="footer">
+
+            <div class="row-fluid">
+                <div class="container">
+
+				</div>
+			</div>
+
+        </footer>
+        
+	</body>
+	
+</html>
