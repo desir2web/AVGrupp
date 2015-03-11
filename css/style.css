@@ -676,13 +676,12 @@ textarea {
 }
 
 
-.content [class*=span] .news, .content [class*=span] .news:hover {
+.content [class*=span] .news.inside, .content [class*=span] .news.inside:hover {
     box-shadow: none;
     background: transparent;
     margin: 0;
 }
-    .content [class*=span] .news .item {
-        float: left;
+    .content [class*=span] .news.inside .item {
         padding: 20px;
         width: 32%;
         background: #fff;
@@ -695,17 +694,17 @@ textarea {
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-        .content [class*=span] .news .item:hover {
+        .content [class*=span] .news.inside .item:hover {
             background: #f5f5f5;
             margin: -5px 0 25px 0;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         }
 
-    .content [class*=span] .news .item h3 {
+    .content [class*=span] .news.inside .item h3 {
         line-height: 18px;
         padding: 0 0 0 20px;
     }
-    .content [class*=span] .news .item p {
+    .content [class*=span] .news.inside .item p {
         padding: 10px 0 0 0;
         position: relative;
         left: 20px;
@@ -715,7 +714,7 @@ textarea {
         padding: 0;
     }
 
-.content [class*=span] .news .gutter-size {
+.content [class*=span] .news.inside .gutter-size {
     width: 2%;
 }
 
@@ -901,26 +900,26 @@ textarea {
 }
     
     
-.content [class*=span] .news .item {
+.content [class*=span] .news.inside .item {
     padding: 20px 20px 20px 40px;
     width: 100%;
     margin: 0;
     box-shadow: none;
 }
-    .content [class*=span] .news .item:hover {
+    .content [class*=span] .news.inside .item:hover {
         margin: 0;
         box-shadow: none;
     }
-.content [class*=span] .news .item h3 {
+.content [class*=span] .news.inside .item h3 {
     line-height: 18px;
     padding: 0;
 }
-.content [class*=span] .news .item p {
+.content [class*=span] .news.inside .item p {
     left: 0;
     width: 100%;
     padding: 10px 0 20px 0;
 }
-.content [class*=span] .news .gutter-size {
+.content [class*=span] .news.inside .gutter-size {
     width: 0%;
 }
     
