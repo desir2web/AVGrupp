@@ -455,7 +455,7 @@ textarea {
             font-size: 45px;
             letter-spacing: -4px;
             text-transform: uppercase;
-            padding: 25px 20px 15px 20px;
+            padding: 25px 20px 10px 20px;
         }
     .content [class*=span] .solutions .info p {
         padding: 10px 20px 20px 20px
@@ -676,6 +676,50 @@ textarea {
 }
 
 
+.content [class*=span] .news, .content [class*=span] .news:hover {
+    box-shadow: none;
+    background: transparent;
+    margin: 0;
+}
+    .content [class*=span] .news .item {
+        float: left;
+        padding: 20px;
+        width: 32%;
+        background: #fff;
+        margin: 0 0 20px 0;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        border: 0;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+        .content [class*=span] .news .item:hover {
+            background: #f5f5f5;
+            margin: -5px 0 25px 0;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .content [class*=span] .news .item h3 {
+        line-height: 18px;
+        padding: 0 0 0 20px;
+    }
+    .content [class*=span] .news .item p {
+        padding: 10px 0 0 0;
+        position: relative;
+        left: 20px;
+        width: 90%;
+    }
+    .content [class*=span] .page.no-padding {
+        padding: 0;
+    }
+
+.content [class*=span] .news .gutter-size {
+    width: 2%;
+}
+
+
 /* footer */
 
 .footer {
@@ -794,6 +838,7 @@ textarea {
         bottom: -5px;
     }
     
+    
     .content [class*=span] .news .item {
         padding: 12px 12px 12px 40px;
     }
@@ -810,6 +855,7 @@ textarea {
         .content [class*=span] .page:hover {
             margin: 0;
         }
+    
     
 .content [class*=span] .solution {
     padding: 220px 0 10px 0;
@@ -830,5 +876,52 @@ textarea {
         right: 0;
         bottom: inherit;
     }
+    
+    
+.content [class*=span] .works .item {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+}
+    .content [class*=span] .works .item:hover {
+        margin: 0;
+        box-shadow: none;
+    }
+.content [class*=span] .works .item h3 {
+    line-height: 18px;
+    padding: 20px 20px 10px 20px;
+}
+.content [class*=span] .works .item p {
+    left: 0;
+    width: 100%;
+    padding: 10px 0 20px 0;
+}
+.content [class*=span] .works .gutter-size {
+    width: 0%;
+}
+    
+    
+.content [class*=span] .news .item {
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+}
+    .content [class*=span] .news .item:hover {
+        margin: 0;
+        box-shadow: none;
+    }
+.content [class*=span] .news .item h3 {
+    line-height: 18px;
+    padding: 0;
+}
+.content [class*=span] .news .item p {
+    left: 0;
+    width: 100%;
+    padding: 10px 0 20px 0;
+}
+.content [class*=span] .news .gutter-size {
+    width: 0%;
+}
     
 }
