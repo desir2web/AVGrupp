@@ -486,14 +486,6 @@ textarea {
         }
 
 
-.content [class*=span] .banner {
-    box-shadow: none;
-    margin-bottom: 0;
-}
-    .content [class*=span] .banner:hover {
-        box-shadow: none;
-        margin-bottom: 0;
-    }
     .content [class*=span] .banner .photo {
         display: block;
         height: 220px;
@@ -506,13 +498,7 @@ textarea {
     height: 220px;
     overflow: hidden;
     position: relative;
-    box-shadow: none;
-    margin-bottom: 0;
 }
-    .content [class*=span] .shipping:hover {
-        box-shadow: none;
-        margin-bottom: 0;
-    }
     .content [class*=span] .shipping div {
         position: absolute;
         height: 220px;
